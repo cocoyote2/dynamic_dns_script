@@ -40,3 +40,6 @@ if old_ip != current_ip:
     client.post(f"/domain/zone/{DNS_ZONE_NAME}/refresh")
 
     print('The zone has been modified !')
+
+else:
+    print("The ip didn't need to be modified")
