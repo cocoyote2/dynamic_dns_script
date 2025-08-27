@@ -1,0 +1,21 @@
+# Ignorer les fichiers et dossiers sensibles/inutiles
+.env
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Ignorer le dossier git
+.git
+.gitignore
+
+# Ignorer les fichiers de dépendances locales
+venv/
+.envrc
+
+# Ignorer les fichiers de config de l'éditeur
+.vscode/
+.idea/
+*.swp

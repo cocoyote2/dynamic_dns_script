@@ -1,0 +1,12 @@
+FROM library/python:3.13-slim
+
+WORKDIR /app
+
+COPY requirements.txt ./
+COPY script.py ./
+COPY .env ./
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Lance ton script toutes les minutes en boucle
+CMD ["sh", "-c", "while true; do python /app/script.py; sleep 60; done"]
