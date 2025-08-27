@@ -34,8 +34,6 @@ client = ovh.Client(
 old_ip, dns_zone_id = get_old_ip()
 current_ip = get_current_ip()
 
-old_ip = "109.138.203.61"
-
 if old_ip != current_ip:
     client.put(f'/domain/zone/{DNS_ZONE_NAME}/record/{dns_zone_id}', subDomain=SUBDOMAIN_NAME, target=current_ip, ttl=60)
 
