@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copie uniquement les fichiers nécessaires
 COPY requirements.txt ./
-COPY script.py ./
+COPY main.py ./
 
 # Installation des dépendances
 RUN pip install --no-cache-dir -r requirements.txt
