@@ -11,4 +11,4 @@ COPY script.py ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Exécution du script toutes les minutes
-CMD ["sh", "-c", "while true; do python /app/script.py; sleep 60; done"]
+CMD ["sh", "-c", "while true; do python /app/main.py; sleep 60; done"]
